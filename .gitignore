@@ -1,0 +1,6 @@
+WpfExampleWebifi/bin/
+WpfExampleWebifi/obj/
+WpfExampleSerialPort/bin/
+WpfExampleSerialPort/obj/
+*.suo
+.vs/

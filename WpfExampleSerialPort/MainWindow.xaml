@@ -1,0 +1,15 @@
+﻿<Window xmlns:Webifi="clr-namespace:WebifiLib;assembly=Webifi"  
+        x:Class="WpfExampleSerialPort.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="CYW Serial Port" Height="300" Width="525">
+    <StackPanel>
+        <Webifi:UserControlSerialPort  x:Name="webifiSerialPort" Margin="5" DataReceived="webifiSerialPort_DataReceived" BaudRate="115200"/>
+        <TextBlock Margin="5,0,0,0">Received Data:</TextBlock>
+        <TextBox Margin="5,0,5,0" x:Name="textboxRecData" AcceptsReturn="True" TextWrapping="Wrap" Height="100"></TextBox>
+        <Button x:Name="buttonClearRecData" Margin="5" Width="100" HorizontalAlignment="Left" Click="buttonClearRecData_Click">Clear</Button>
+        <TextBlock Margin="5,0,0,0">Send Data:</TextBlock>
+        <TextBox x:Name="textboxSendData" Margin="5,0,5,0"></TextBox>
+        <Button x:Name="buttonSendData" Margin="5" Width="100" HorizontalAlignment="Left" Click="buttonSendData_Click">Send</Button>
+    </StackPanel>
+</Window>
